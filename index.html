@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de gestion de tareas</title>
+</head>
+<body>
+    <div>
+        <h2>Crear Tarea</h2>
+        <label style="display: block;" for="titulo">Titulo</label>
+        <input type="text" placeholder="Ingrese el titulo" id="titulo" required>
+        <br>
+        <label style="display: block;" for="descripcion">Descripción:</label>
+        <textarea id="descripcion" cols="30" rows="10" required></textarea>
+        <br>
+        <label style="display: block;" for="fecha">Fecha:</label>
+        <input id="fecha" type="date" required>
+        <br>
+        <button  onclick="crearTarea()" >Enviar</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Titulo</th>
+                <th>Descripción</th>
+                <th>Fecha</th>
+                <th>Estado</th>
+                <th>Confirmar</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">    
+        </tbody>
+    </table>
+    <script src="app.js"></script>
+</body>
+</html>
